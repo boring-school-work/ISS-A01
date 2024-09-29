@@ -1,0 +1,140 @@
+:root {
+    --background-colour: #F4EEFF;
+    --form-colour: #DCD6F7;
+    --button-colour: #A6B1E1;
+    --button-hover-colour: #424874;
+    --text-colour: #000000;
+    --text-hover-colour: #FFFFFF;
+    --link-colour: #6256CA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-colour);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#registerBox {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--form-colour);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+#titlehead {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#titlehead p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: var(--text-colour);
+    font-size: 2.5em;
+    margin: 10px 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#terms {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#submitRegister {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--button-colour);
+    color: var(--text-colour);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-colour);
+    color: var(--text-hover-colour);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: var(--link-colour);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    #registerBox {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #titlehead p {
+        font-size: 1em;
+    }
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#picture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-left: 170px;
+}
