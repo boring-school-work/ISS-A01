@@ -20,7 +20,7 @@
     </div>
     <form id="registerForm" action="../actions/register_user.php" method="POST">
       <div class="group">
-        <div style="form-group">
+        <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required placeholder="Richard">
         </div>

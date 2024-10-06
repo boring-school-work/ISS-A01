@@ -8,9 +8,8 @@ ob_start();
 //funtion to check for login
 function is_logged_in()
 {
-  if (isset($_SESSION['user_id'])) {
+  if ($_SESSION['logged_in'] == true) {
     return true;
   }
-
   return false;
 }

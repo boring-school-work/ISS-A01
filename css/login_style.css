@@ -61,6 +61,7 @@ label {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
